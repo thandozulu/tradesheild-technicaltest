@@ -9,7 +9,7 @@ public class DeepestPitAnswer
         int n = points.Length;
         
         // Iterate through the array to find pits
-        for (int i = 0; i < n - 3; i++)
+        for (int i = 0; i <= n - 3; i++)
         {
             if (points[i] >= 0)
             {
