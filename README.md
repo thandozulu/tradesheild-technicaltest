@@ -1,1 +1,2 @@
-# tradesheild-technicaltest
+# TechnicalAssessment
+The technical assessment seed project
