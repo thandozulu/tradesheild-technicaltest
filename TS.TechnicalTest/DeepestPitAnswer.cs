@@ -9,9 +9,24 @@ public class DeepestPitAnswer
         int n = points.Length;
         
         // Iterate through the array to find pits
-        for (int i = 1; i < n - 1; i++)
+        for (int i = 0; i < n - 3; i++)
         {
-            
+            if (points[i] >= 0)
+            {
+                int p = points[i];
+                int q = points[i + 1];
+                int r = points[i + 2];
+                
+                if (p > q && r > q)
+                {
+                    int depth = Math.Min(p - q, r - q);
+                    if (depth > deepestPit)
+                    {
+                        deepestPit = depth;
+                    }
+                }
+            }
         }
+        return deepestPit;
     }
 }
