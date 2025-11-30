@@ -5,6 +5,11 @@ public class LongestSentanceAnswer
 {
     public static int Solution(string s)
     {
-        throw new NotImplementedException("Not completed yet");
+        // Split sentences by '.', '!' or '?'
+        var sentences = s.Split(new[] { '.', '!', '?' });
+        
+        // Initialize the maximum word count
+        int maxWords = 0;
+        
     }
 }
